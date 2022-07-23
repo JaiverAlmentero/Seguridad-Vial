@@ -1,0 +1,93 @@
+@import "./colors";
+@import "./fonts";
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: $c-2;
+}
+:root {
+  font-size: 16px;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+// bootstrap container width
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1120px;
+  }
+}
+
+// general
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0 0 0 0;
+  padding: 0;
+  outline: 0;
+}
+// selection
+::selection {
+  color: #fff;
+  background-color: $c-1;
+}
+/* Scrollbar */
+/** firefox  */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: $c-1 $c-2;
+}
+/** chrome  */
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+body::-webkit-scrollbar-track {
+  background: $c-2;
+}
+body::-webkit-scrollbar-thumb {
+  background: $c-1;
+}
+// sections
+section {
+  position: relative;
+}
+main {
+  position: relative;
+  overflow-x: hidden;
+}
+// anchor tag
+a {
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
+  transition: color 0.3s ease;
+}
+// headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+// media
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}
